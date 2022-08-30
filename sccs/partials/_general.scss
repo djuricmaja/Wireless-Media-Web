@@ -1,13 +1,18 @@
 $color-primary-grey: #9d9d9c;
+$color-primary-dark-grey: #dbdbdb;
 $color-primary-focus: #429099;
 $color-primary-hover: #bbd547;
 $color-primary-active: #81b36e;
 $color-primary-visited: #1375b8;
+$filter-primary-green: brightness(0) saturate(100%) invert(97%) sepia(68%) saturate(931%) hue-rotate(11deg) brightness(81%) contrast(107%);
 
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     color: $color-primary-grey;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 a:hover {
@@ -19,7 +24,7 @@ a:hover {
 }
 
 .filter-green {
-    filter: brightness(0) saturate(100%) invert(97%) sepia(68%) saturate(931%) hue-rotate(11deg) brightness(81%) contrast(107%);
+    filter: $filter-primary-green
 }
 
 @media (min-width: 480px) {
@@ -55,4 +60,8 @@ a:hover {
 
 .mic-15 > * {
     margin-inline: 15px;
+}
+
+.aic {
+    align-items: center;
 }

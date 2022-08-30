@@ -1,0 +1,36 @@
+footer {
+    margin-top: auto;
+    padding: 12px 20px;
+    background-color: $color-primary-dark-grey;
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        .footer-icon-container {
+            background-color: #f3f3f4;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            color: #6d6e71;
+            display: inline-block;
+            padding: 5px;
+            margin-right: 8px;
+        }
+        a {
+            display: block;
+            margin-top: 5px;
+            img {
+                height: 19px;
+                width: 31px;
+            }
+            &:link {
+                filter: none;
+            }
+            &:visited,
+            &:focus,
+            &:hover,
+            &:active {
+                filter: $filter-primary-green;
+            }
+        }
+    }
+}
