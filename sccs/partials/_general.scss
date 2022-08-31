@@ -1,10 +1,11 @@
-$color-primary-grey: #9d9d9c;
-$color-primary-dark-grey: #dbdbdb;
+$color-primary-grey: #646464;
+$color-primary-light-grey: #dbdbdb;
 $color-primary-focus: #429099;
 $color-primary-hover: #bbd547;
 $color-primary-active: #81b36e;
 $color-primary-visited: #1375b8;
-$filter-primary-green: brightness(0) saturate(100%) invert(97%) sepia(68%) saturate(931%) hue-rotate(11deg) brightness(81%) contrast(107%);
+$filter-primary-green: brightness(0) saturate(100%) invert(97%) sepia(68%)
+    saturate(931%) hue-rotate(11deg) brightness(81%) contrast(107%);
 
 body {
     margin: 0;
@@ -16,7 +17,12 @@ body {
     flex-direction: column;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
     font-weight: normal;
 }
@@ -30,10 +36,22 @@ a:hover {
 }
 
 .filter-green {
-    filter: $filter-primary-green
+    filter: $filter-primary-green;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+.column {
+    width: 100%;
 }
 
 @media (min-width: 480px) {
+    .column-xs-6 {
+        width: 50%;
+    }
     .display-xs-flex {
         display: flex;
     }

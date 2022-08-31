@@ -2,13 +2,18 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: normal;
-  color: #9d9d9c;
+  color: #646464;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   font-weight: normal;
 }
@@ -25,7 +30,20 @@ a:hover {
   filter: brightness(0) saturate(100%) invert(97%) sepia(68%) saturate(931%) hue-rotate(11deg) brightness(81%) contrast(107%);
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.column {
+  width: 100%;
+}
+
 @media (min-width: 480px) {
+  .column-xs-6 {
+    width: 50%;
+  }
   .display-xs-flex {
     display: flex;
   }
@@ -91,16 +109,23 @@ header .nav .nav-top .nav-items a:link {
   filter: none;
 }
 header .nav .nav-top .nav-items a:visited {
+  color: #1375b8;
   filter: brightness(0) saturate(100%) invert(35%) sepia(65%) saturate(1061%) hue-rotate(171deg) brightness(95%) contrast(93%);
 }
 header .nav .nav-top .nav-items a:focus {
+  color: #429099;
   filter: brightness(0) saturate(100%) invert(54%) sepia(19%) saturate(1080%) hue-rotate(138deg) brightness(90%) contrast(86%);
 }
 header .nav .nav-top .nav-items a:hover {
+  color: #bbd547;
   filter: brightness(0) saturate(100%) invert(92%) sepia(91%) saturate(581%) hue-rotate(11deg) brightness(91%) contrast(83%);
 }
 header .nav .nav-top .nav-items a:active {
+  color: #81b36e;
   filter: brightness(0) saturate(100%) invert(70%) sepia(18%) saturate(755%) hue-rotate(59deg) brightness(89%) contrast(96%);
+}
+header .nav .nav-top .nav-items span {
+  color: #ababab;
 }
 header .nav .nav-dropdown .nav-dropdown-items ul {
   list-style: none;
@@ -111,36 +136,40 @@ header .nav .nav-dropdown .nav-dropdown-items ul li a {
   display: block;
   padding: 3px 8px;
   margin-top: 1px;
-}
-header .nav .nav-dropdown .nav-dropdown-items ul li:link {
-  color: #9d9d9c;
   background-color: white;
 }
-header .nav .nav-dropdown .nav-dropdown-items ul li:visited {
+header .nav .nav-dropdown .nav-dropdown-items ul li a:link {
+  color: #646464;
+  background-color: white;
+}
+header .nav .nav-dropdown .nav-dropdown-items ul li a:visited {
+  color: white;
   background-color: #1375b8;
-  color: white;
 }
-header .nav .nav-dropdown .nav-dropdown-items ul li:focus {
+header .nav .nav-dropdown .nav-dropdown-items ul li a:focus {
+  color: white;
   background-color: #429099;
-  color: white;
 }
-header .nav .nav-dropdown .nav-dropdown-items ul li:hover {
+header .nav .nav-dropdown .nav-dropdown-items ul li a:hover {
+  color: white;
   background-color: #bbd547;
-  color: white;
 }
-header .nav .nav-dropdown .nav-dropdown-items ul li:active {
-  background-color: #81b36e;
+header .nav .nav-dropdown .nav-dropdown-items ul li a:active {
   color: white;
+  background-color: #81b36e;
 }
 header .nav .nav-search input {
   display: block;
   width: calc(100% - 10px);
   margin: 7px;
   padding: 5px;
-  border: 1px solid #9d9d9c;
+  border: 1px solid #646464;
   border-radius: 2px;
   outline: none;
-  color: #9d9d9c;
+  color: #646464;
+}
+header a {
+  text-decoration: none;
 }
 
 @media (min-width: 480px) {
@@ -182,6 +211,56 @@ footer .footer a:visited, footer .footer a:focus, footer .footer a:hover, footer
   filter: brightness(0) saturate(100%) invert(97%) sepia(68%) saturate(931%) hue-rotate(11deg) brightness(81%) contrast(107%);
 }
 
+.main {
+  width: 200px;
+}
+.main h2 {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+.main img {
+  width: 100%;
+}
+.main .article-text {
+  font-size: 13px;
+}
+.main .show-more-container {
+  text-align: right;
+}
+.main .show-more-container .show-more {
+  border-radius: 2px;
+  color: white;
+  background-color: #dbdbdb;
+  text-transform: uppercase;
+  font-size: 9px;
+  padding: 5px 4px 4px 4px;
+}
+.main .show-more-container .show-more:visited, .main .show-more-container .show-more:focus, .main .show-more-container .show-more:hover, .main .show-more-container .show-more:active {
+  background-color: #bbd547;
+  color: white;
+}
+
+@media (min-width: 480px) {
+  .main {
+    width: 400px;
+  }
+  .main .article-desc {
+    padding: 0 5px 0 25px;
+  }
+  .main .article-desc .article-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+}
+@media (min-width: 768px) {
+  .main {
+    width: 500px;
+  }
+}
 .carousel {
   position: relative;
   margin-bottom: 30px;

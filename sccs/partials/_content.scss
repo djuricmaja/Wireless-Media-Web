@@ -1,0 +1,54 @@
+.main {
+    width: 200px;
+    h2 {
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+    img {
+        width: 100%;
+    }
+    .article-text {
+        font-size: 13px;
+    }
+    .show-more-container {
+        text-align: right;
+        .show-more {
+            border-radius: 2px;
+            color: white;
+            background-color: $color-primary-light-grey;
+            text-transform: uppercase;
+            font-size: 9px;
+            padding: 5px 4px 4px 4px;
+            &:visited,
+            &:focus,
+            &:hover,
+            &:active {
+                background-color: $color-primary-hover;
+                color: white;
+            }
+        }
+    }
+}
+
+@media (min-width: 480px) {
+    .main {
+        width: 400px;
+        .article-desc {
+            padding: 0 5px 0 25px;
+            .article-text {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                line-clamp: 3;
+                -webkit-box-orient: vertical;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .main {
+        width: 500px;
+    }
+}

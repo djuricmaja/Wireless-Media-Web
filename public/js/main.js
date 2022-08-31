@@ -1,7 +1,6 @@
 window.addEventListener('DOMContentLoaded', (event) => {
     initBurger();
     initNavbar();
-    initMoreOrLess();
     initCarousel('main-carousel');
 });
 
@@ -91,26 +90,5 @@ function toggleFilterGreen(target, button) {
         button.classList.remove("filter-green");
     } else {
         button.classList.add("filter-green");
-    }
-}
-
-function initMoreOrLess() {
-    let articleButtons = document.querySelectorAll(".show-more");
-
-    for (const articleButton of articleButtons) {
-        articleButton.addEventListener("click", showMoreOrLess);
-    }
-}
-
-function showMoreOrLess() {
-    var article = this.closest("article");
-    var text = article.querySelector(".article-text");
-
-    if (text.classList.contains('display-none')) {
-        text.classList.remove('display-none')
-        this.innerHTML = "Show less";
-    } else {
-        text.classList.add('display-none')
-        this.innerHTML = "Show more";
     }
 }

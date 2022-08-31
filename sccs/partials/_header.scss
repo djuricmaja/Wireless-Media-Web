@@ -1,3 +1,5 @@
+$color-primary-header: #ababab;
+
 header {
     border-bottom: 8px solid;
     border-image: linear-gradient(45deg, #bad447, #1375b8) 1;
@@ -19,25 +21,32 @@ header {
                         filter: none;
                     }
                     &:visited {
+                        color: $color-primary-visited;
                         filter: brightness(0) saturate(100%) invert(35%) sepia(65%)
                             saturate(1061%) hue-rotate(171deg) brightness(95%)
                             contrast(93%);
                     }
                     &:focus {
+                        color: $color-primary-focus;
                         filter: brightness(0) saturate(100%) invert(54%) sepia(19%)
                             saturate(1080%) hue-rotate(138deg) brightness(90%)
                             contrast(86%);
                     }
                     &:hover {
+                        color: $color-primary-hover;
                         filter: brightness(0) saturate(100%) invert(92%) sepia(91%)
                             saturate(581%) hue-rotate(11deg) brightness(91%)
                             contrast(83%);
                     }
                     &:active {
+                        color: $color-primary-active;
                         filter: brightness(0) saturate(100%) invert(70%) sepia(18%)
                             saturate(755%) hue-rotate(59deg) brightness(89%)
                             contrast(96%);
                     }
+                }
+                span {
+                    color: $color-primary-header;
                 }
             }
         }
@@ -52,26 +61,27 @@ header {
                             display: block;
                             padding: 3px 8px;
                             margin-top: 1px;
-                        }
-                        &:link {
-                            color: $color-primary-grey;
                             background-color: white;
-                        }
-                        &:visited {
-                            background-color: $color-primary-visited;
-                            color: white;
-                        }
-                        &:focus {
-                            background-color: $color-primary-focus;
-                            color: white;
-                        }
-                        &:hover {
-                            background-color: $color-primary-hover;
-                            color: white;
-                        }
-                        &:active {
-                            background-color: $color-primary-active;
-                            color: white;
+                            &:link {
+                                color: $color-primary-grey;
+                                background-color: white;
+                            }
+                            &:visited {
+                                color: white;
+                                background-color: $color-primary-visited;
+                            }
+                            &:focus {
+                                color: white;
+                                background-color: $color-primary-focus;
+                            }
+                            &:hover {
+                                color: white;
+                                background-color: $color-primary-hover;
+                            }
+                            &:active {
+                                color: white;
+                                background-color: $color-primary-active;
+                            }
                         }
                     }
                 }
@@ -89,6 +99,9 @@ header {
                 color: $color-primary-grey;
             }
         }
+    }
+    a {
+        text-decoration: none;
     }
 }
 
