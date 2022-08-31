@@ -1,97 +1,159 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>WirelessMedia</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/main.css">
-    </head>
-    <body>
-        <header>
-            <div class="nav container">
-                <div class="nav-top">
-                    <div class="nav-logo">
-                        <a>
-                            <img src="img/logo.png"/>
-                        </a>
-                    </div>
-                    <div class="nav-items">
-                        <div class="display-none display-xs-flex display-md-none mic-15">
-                            <a><img src="img/svg/home.svg"></a>
-                            <a><img src="img/svg/about.svg"></a>
-                            <a><img src="img/svg/our-work.svg"></a>
-                            <a><img src="img/svg/contact.svg"></a>
-                        </div>
-                        <div class="display-none display-md-flex uc mic-5">
-                            <a>Home</a>
-                            <span>/</span>
-                            <a>About us</a>
-                            <span>/</span>
-                            <a>Our work</a>
-                            <span>/</span>
-                            <a>Contact</a>
-                        </div>
-                        <div class="display-xs-none">
-                            <a id="nav-item-burger"><img src="img/svg/burger.svg"></a>
-                        </div>
-                        <div>
-                            <a id="nav-item-search"><img src="img/svg/search.svg"></a>
-                        </div>
-                    </div>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>WirelessMedia</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav container">
+            <div class="nav-top">
+                <div class="nav-logo">
+                    <a>
+                        <img src="img/logo.png" />
+                    </a>
                 </div>
-                <div class="nav-dropdown display-none">
-                    <div class="nav-dropdown-items uc">
-                        <ul>
-                            <li><a>Home</a></li>
-                            <li><a>About</a></li>
-                            <li><a>Our work</a></li>
-                            <li><a>Contact</a></li>
-                        </ul>
+                <div class="nav-items">
+                    <div class="display-none display-xs-flex display-md-none mic-15">
+                        <a><img src="img/svg/home.svg"></a>
+                        <a><img src="img/svg/about.svg"></a>
+                        <a><img src="img/svg/our-work.svg"></a>
+                        <a><img src="img/svg/contact.svg"></a>
                     </div>
-                </div>
-                <div id="nav-search" class="nav-search display-none">
-                    <form>
-                        <input type="search" />
-                    </form>
-                </div>
-            </div>
-        </header>
-        <footer>
-            <div class="footer container">
-                <div>
-                    <div class="footer-icon-container">
-                        <a class="footer-icon" href="#!">
-                            <img src="img/svg/facebook.svg" />
-                        </a>
+                    <div class="display-none display-md-flex uc mic-5">
+                        <a>Home</a>
+                        <span>/</span>
+                        <a>About us</a>
+                        <span>/</span>
+                        <a>Our work</a>
+                        <span>/</span>
+                        <a>Contact</a>
                     </div>
-                    <div class="footer-icon-container">
-                        <a class="footer-icon" href="#!">
-                            <img src="img/svg/twitter.svg" />
-                        </a>
+                    <div class="display-xs-none">
+                        <a id="nav-item-burger"><img src="img/svg/burger.svg"></a>
                     </div>
-                    <div class="footer-icon-container">
-                        <a class="footer-icon" href="#!">
-                            <img src="img/svg/email.svg" />
-                        </a>
-                    </div>
-                </div>
-                <div class="display-none display-md-flex uc mic-5 aic">
-                    <a>Home</a>
-                    <a>About</a>
-                    <a>Our work</a>
-                    <a>Contact</a>
-                </div>
-                <div>
-                    <div class="footer-icon-container">
-                        <a class="footer-icon" href="#!">
-                            <img src="img/svg/top.svg" />
-                        </a>
+                    <div>
+                        <a id="nav-item-search"><img src="img/svg/search.svg"></a>
                     </div>
                 </div>
             </div>
-        </footer>   
-        <script src="js/main.js"></script>
-    </body>
+            <div class="nav-dropdown display-none">
+                <div class="nav-dropdown-items uc">
+                    <ul>
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Our work</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="nav-search" class="nav-search display-none">
+                <form>
+                    <input type="search" />
+                </form>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div id="main-carousel" class="carousel container">
+            <div class="carousel-content">
+                <div class="carousel-item active">
+                    <div class="carousel-item-content">
+                        <div class="carousel-item-img">
+                            <img class="carousel-item-img-icon" src="img/icon.png" alt="" />
+                            <img class="carousel-item-img-dots" src="img/dots.png" alt="" />
+                        </div>
+                        <div class="carousel-item-header display-none display-xs-flex">
+                            <h3>LOREM IPSUM DOLOR SIT 1</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item-nav-text">
+                        <h3>LOREM IPSUM DOLOR SIT 1</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-item-content">
+                        <div class="carousel-item-img">
+                            <img class="carousel-item-img-icon" src="img/icon.png" alt="" />
+                            <img class="carousel-item-img-dots" src="img/dots.png" alt="" />
+                        </div>
+                        <div class="carousel-item-header display-none display-xs-flex">
+                            <h3>LOREM IPSUM DOLOR SIT 2</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item-nav-text">
+                        <h3>LOREM IPSUM DOLOR SIT 2</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-item-content">
+                        <div class="carousel-item-img">
+                            <img class="carousel-item-img-icon" src="img/icon.png" alt="" />
+                            <img class="carousel-item-img-dots" src="img/dots.png" alt="" />
+                        </div>
+                        <div class="carousel-item-header display-none display-xs-flex">
+                            <h3>LOREM IPSUM DOLOR SIT 3</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item-nav-text">
+                        <h3>LOREM IPSUM DOLOR SIT 3</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-dots">
+                <a data-item="0" class="active"></a>
+                <a data-item="1"></a>
+                <a data-item="2"></a>
+            </div>
+            <a class="carousel-previous">
+                <img src="img/arrow-left.png"/>
+            </a>
+            <a class="carousel-next">
+                <img src="img/arrow-right.png"/>
+            </a>
+        </div>
+    </section>
+    <footer>
+        <div class="footer container">
+            <div>
+                <div class="footer-icon-container">
+                    <a class="footer-icon" href="#!">
+                        <img src="img/svg/facebook.svg" />
+                    </a>
+                </div>
+                <div class="footer-icon-container">
+                    <a class="footer-icon" href="#!">
+                        <img src="img/svg/twitter.svg" />
+                    </a>
+                </div>
+                <div class="footer-icon-container">
+                    <a class="footer-icon" href="#!">
+                        <img src="img/svg/email.svg" />
+                    </a>
+                </div>
+            </div>
+            <div class="display-none display-md-flex uc mic-5 aic">
+                <a>Home</a>
+                <a>About</a>
+                <a>Our work</a>
+                <a>Contact</a>
+            </div>
+            <div>
+                <div class="footer-icon-container">
+                    <a class="footer-icon" href="#!">
+                        <img src="img/svg/top.svg" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
 </html>
