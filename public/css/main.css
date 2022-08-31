@@ -292,6 +292,9 @@ footer .footer .footer-item a:active {
   .main {
     width: 400px;
   }
+  .main h2 {
+    margin-left: 20px;
+  }
   .main .article-desc .article-text {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -323,12 +326,12 @@ footer .footer .footer-item a:active {
 .carousel .carousel-content .carousel-item .carousel-item-content .carousel-item-img .carousel-item-img-icon {
   margin: auto;
   display: block;
-  padding: 65px 0;
+  padding: 55px 0;
 }
 .carousel .carousel-content .carousel-item .carousel-item-content .carousel-item-img .carousel-item-img-dots {
   display: block;
   position: absolute;
-  top: 55px;
+  top: 88px;
   left: 0;
   right: 0;
   margin-left: auto;
@@ -385,6 +388,8 @@ footer .footer .footer-item a:active {
   }
   .carousel .carousel-content .carousel-item .carousel-item-content .carousel-item-header h3 {
     font-size: 40px;
+    margin-left: 26px;
+    margin-right: 26px;
   }
   .carousel .carousel-content .carousel-item .carousel-item-nav-text {
     display: none;
@@ -411,5 +416,14 @@ footer .footer .footer-item a:active {
   }
   .carousel .carousel-dots a.active {
     background-color: #BCD546;
+  }
+}
+@media (min-width: 768px) {
+  .carousel .carousel-content .carousel-item .carousel-item-img {
+    width: 50%;
+  }
+  .carousel .carousel-content .carousel-item .carousel-item-content .carousel-item-header h3 {
+    font-size: 52px;
+    margin-left: 26px;
   }
 }/*# sourceMappingURL=main.css.map */

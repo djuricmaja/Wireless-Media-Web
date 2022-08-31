@@ -17,12 +17,12 @@ $color-dots-active: #BCD546;
                     .carousel-item-img-icon {
                         margin: auto;
                         display: block;
-                        padding: 65px 0;
+                        padding: 55px 0;
                     }
                     .carousel-item-img-dots {
                         display: block;
                         position: absolute;
-                        top: 55px;
+                        top: 88px;
                         left: 0;
                         right: 0;
                         margin-left: auto;
@@ -85,6 +85,8 @@ $color-dots-active: #BCD546;
                         text-align: left;
                         h3 {
                             font-size: 40px;
+                            margin-left: 26px;
+                            margin-right: 26px;;
                         }
                     }
                 }
@@ -113,6 +115,25 @@ $color-dots-active: #BCD546;
                 margin-inline: 1px;
                 &.active {
                     background-color: $color-dots-active;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 768px){
+    .carousel {
+        .carousel-content {
+            .carousel-item {
+                .carousel-item-img {
+                    width: 50%;
+                }
+                .carousel-item-content {
+                    .carousel-item-header {
+                        h3 {
+                            font-size: 52px;
+                            margin-left: 26px;
+                        }
+                    }
                 }
             }
         }
