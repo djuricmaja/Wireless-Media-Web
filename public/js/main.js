@@ -1,17 +1,17 @@
 window.addEventListener('DOMContentLoaded', (event) => {
     initBurger();
     initNavbar();
-    initCarousel('main-carousel');
+    initCarousel('main-carousel', 3000);
 });
 
-function initCarousel(id) {
+function initCarousel(id, changeInterval) {
     let carousel = document.querySelector('#' + id);
     let previousBtn = carousel.querySelector('.carousel-previous');
     let nextBtn = carousel.querySelector('.carousel-next');
     let dots = carousel.querySelectorAll('.carousel-dots a');
     let items = carousel.querySelectorAll('.carousel-item');
 
-    nextBtn.addEventListener('click', function() {
+    function next() {
         let activeIndex = findActive(carousel);
 
         if (activeIndex == items.length - 1) {
@@ -24,9 +24,11 @@ function initCarousel(id) {
         items[itemToChangeIndex].classList.add('active');
         dots[activeIndex].classList.remove('active');
         dots[itemToChangeIndex].classList.add('active');
-    });
+    }
 
-    previousBtn.addEventListener('click', function() {
+    nextBtn.addEventListener('click', next);
+    
+    function previous() {
         let activeIndex = findActive(carousel);
         
         if (activeIndex == 0) {
@@ -34,12 +36,14 @@ function initCarousel(id) {
         } else {
             itemToChangeIndex = activeIndex - 1;
         }
-
+        
         items[activeIndex].classList.remove('active');
         items[itemToChangeIndex].classList.add('active');
         dots[activeIndex].classList.remove('active');
         dots[itemToChangeIndex].classList.add('active');
-    });
+    }
+    
+    previousBtn.addEventListener('click', previous);
 
     for (dot of dots) {
         let item = dot.getAttribute('data-item');
@@ -63,6 +67,10 @@ function initCarousel(id) {
 
         return null;
     }
+
+    setInterval(function() {
+        next();
+    }, changeInterval);
 }
 
 function initBurger() {

@@ -1,3 +1,6 @@
+$color-dots-default: #BABABA;
+$color-dots-active: #BCD546;
+
 .carousel {
     position: relative;
     margin-bottom: 30px;
@@ -104,12 +107,12 @@
             a {
                 height: 9px;
                 width: 9px;
-                background-color: #bbb;
+                background-color: $color-dots-default;
                 border-radius: 50%;
                 display: inline-block;
                 margin-inline: 1px;
                 &.active {
-                    background-color: $color-primary-hover;
+                    background-color: $color-dots-active;
                 }
             }
         }

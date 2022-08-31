@@ -359,12 +359,12 @@ footer .footer a:visited, footer .footer a:focus, footer .footer a:hover, footer
   .carousel .carousel-dots a {
     height: 9px;
     width: 9px;
-    background-color: #bbb;
+    background-color: #BABABA;
     border-radius: 50%;
     display: inline-block;
     margin-inline: 1px;
   }
   .carousel .carousel-dots a.active {
-    background-color: #bbd547;
+    background-color: #BCD546;
   }
 }/*# sourceMappingURL=main.css.map */
