@@ -1,5 +1,6 @@
 $color-primary-grey: #646464;
 $color-primary-light-grey: #dbdbdb;
+$color-primary-link: #ababab;
 $color-primary-focus: #429099;
 $color-primary-hover: #bbd547;
 $color-primary-active: #81b36e;
@@ -27,8 +28,11 @@ h6 {
     font-weight: normal;
 }
 
-a:hover {
-    cursor: pointer;
+a {
+    text-decoration: none;
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .display-none {
@@ -39,17 +43,23 @@ a:hover {
     filter: $filter-primary-green;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 40px;
 }
+
 .column {
+    padding: 0 20px;
     width: 100%;
 }
 
 @media (min-width: 480px) {
     .column-xs-6 {
+        flex: 0 0 auto;
         width: 50%;
     }
     .display-xs-flex {
@@ -92,4 +102,12 @@ a:hover {
 
 .center-text {
     text-align: center;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.mb40 {
+    margin-bottom: 40px;
 }

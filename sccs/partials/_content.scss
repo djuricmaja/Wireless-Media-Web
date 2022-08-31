@@ -1,7 +1,7 @@
 .main {
     width: 200px;
     h2 {
-        margin-bottom: 10px;
+        margin: 10px 0;
         font-size: 30px;
     }
     img {
@@ -28,13 +28,34 @@
             }
         }
     }
+    .about-item-img {
+        background-color: $color-primary-light-grey;
+        a {
+            height: 115px;
+            display: flex;
+            justify-content: center;
+            img {
+                display: flex;
+                height: 45px;
+                margin-top: 38px;
+            }
+            &:link {
+                filter: none;
+            }
+            &:visited,
+            &:focus,
+            &:hover,
+            &:active {
+                filter: $filter-primary-green;
+            }
+        }
+    }
 }
 
 @media (min-width: 480px) {
     .main {
         width: 400px;
         .article-desc {
-            padding: 0 5px 0 25px;
             .article-text {
                 overflow: hidden;
                 text-overflow: ellipsis;

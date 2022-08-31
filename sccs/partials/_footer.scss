@@ -17,10 +17,10 @@ footer {
         }
         a {
             display: block;
-            margin-top: 5px;
+            margin-top: 1px;
             img {
                 height: 19px;
-                width: 31px;
+                width: 21px;
             }
             &:link {
                 filter: none;
@@ -30,6 +30,25 @@ footer {
             &:hover,
             &:active {
                 filter: $filter-primary-green;
+            }
+        }
+        .footer-item {
+            a {
+                &:link {
+                    color: $color-primary-link;
+                }
+                &:visited {
+                    color: $color-primary-visited;
+                }
+                &:focus {
+                    color: $color-primary-focus;
+                }
+                &:hover {
+                    color: $color-primary-hover;
+                }
+                &:active {
+                    color: $color-primary-active;
+                }
             }
         }
     }
